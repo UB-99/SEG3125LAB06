@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Website Design Survey</title>
+    <meta charset="UTF-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.bundle.min.js" integrity="sha384-1CmrxMRARb6aLqgBO7yyAxTOQE2AKb9GfXnEo760AUcUmFx3ibVJJAzGytlQcNXd" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="/assets/main.css">
+</head>
+
+<body>
+    <header id="pageTitle">
+        <h1>Youtube Website Survey</h1>
+    </header>
+
+    <div id="container">
+        <!-- BoC Image -->
+        <a href="https://www.youtube.com/" id="bocLink">
+            <img src="/assets/homepage.jpg" title="Click here to be redirected to YouTube"/>
+            <p id="bocLinkText">Click here to be redirected to YouTube</p>
+        </a>
+
+        <form>
+            <!-- Radio buttons -->
+            <label for="simplicity">Is this website simple to use?</label><br>
+
+            <input type="radio" id="simple" name="simplicity" value="Yes">
+            <label class="form-check-label" for="simplicity">Yes</label><br>
+
+            <input type="radio" id="complicated" name="simplicity" value="No">
+            <label class="form-check-label" for="simplicity">No</label><br>
+
+            <!-- Text -->
+            <label for="layoutOpinion">Please tell us how you discovered this website.</label><br>
+            <textarea id="layoutOpinion" class="form-control" name="layoutOpinion" rows="2" cols="53"></textarea><br>
+
+            <!-- Multiple checkboxes -->
+            <label for="designAspects">What do you like about this website?</label><br>
+
+            <input type="checkbox" id="colour" name="designAspects" value="Colour">
+            <label class="form-check-label" for="designAspects">Colours</label><br>
+
+            <input type="checkbox" id="aesthetic" name="designAspects" value="Theme">
+            <label class="form-check-label" for="designAspects">Theme</label><br>
+
+            <input type="checkbox" id="typography" name="designAspects" value="Background">
+            <label class="form-check-label" for="designAspects">Background</label><br>
+
+            <input type="checkbox" id="functionality" name="designAspects" value="Name">
+            <label class="form-check-label" for="designAspects">Name</label><br>
+
+            <input type="checkbox" id="navigation" name="designAspects" value="Font">
+            <label class="form-check-label" for="designAspects">Font</label><br>
+
+            <input type="checkbox" id="layout" name="designAspects" value="Logo">
+            <label class="form-check-label" for="designAspects">Logo</label><br><br>
+
+            <!-- Dropdown  -->
+            <label for="leastFave">What do you dislike the most about this website?</label><br>
+            <select id="leastFave" class="form-control" name="leastFave">
+              <option value="Colour">Colours</option>
+              <option value="Theme">Theme</option>
+              <option value="Background">Background</option>
+              <option value="Name">Name</option>
+              <option value="Font">Font</option>
+              <option value="Logo">Logo</option>
+            </select><br>
+
+            <!-- Comments -->
+            <label for="comment">If you have a suggestion to improve the quality of the website, please comment down below.</label><br>
+            <textarea name="comment" class="form-control" rows="4" cols="53"></textarea><br>
+
+            <!-- Likert scale >
+            <label for="navRating">On a scale of 1 to 5, would you recommend this website to someone else?</label><br>
+            <div id="sliderContainer">
+                <span float="right">1</span>
+                <input name="navRating" type="range" class="custom-range slider" min="1" max="5">
+                <span float="left">5</span>
+            </div><br>  <! -->
+
+            <!-- Radio buttons PART 2 -->
+            <label for="navRating">On a scale of 1 to 5, would you recommend this website to someone else?</label><br>
+
+            <input type="radio" id="simple" name="navRating" value="One">
+            <label class="form-check-label" for="navRating">1</label><br>
+
+            <input type="radio" id="complicated" name="navRating" value="Two">
+            <label class="form-check-label" for="navRating">2</label><br>
+
+            <input type="radio" id="complicated" name="navRating" value="Three">
+            <label class="form-check-label" for="navRating">3</label><br>
+
+            <input type="radio" id="complicated" name="navRating" value="Four">
+            <label class="form-check-label" for="navRating">4</label><br>
+
+            <input type="radio" id="complicated" name="navRating" value="Five">
+            <label class="form-check-label" for="navRating">5</label><br>
+
+            <!-- Submit button -->
+            <button formmethod="POST" type="submit" class="btn btn-primary" id="submitBtn">Submit</button>
+
+        </form>
+    </div>
+    <script src="/assets/action.js"></script>
+</body>
+
+<footer>
+    <p>Website designed by <b>YOUTUBE DESIGN TEAM</b></p>
+</footer>
+
+</html>
